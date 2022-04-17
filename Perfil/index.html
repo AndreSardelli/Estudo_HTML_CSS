@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        .sidebar{
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            background-color: darkred;
+        }
+        
+
+        .sidebar-pos{
+            
+            margin-top: 40%;
+        }
+
+        .img-sidebar{
+            text-align: center;
+        }
+
+        .img-sidebar img{
+            width: 40%;
+            border-radius: 40%;
+            border: 4px solid firebrick;
+        }
+
+        .menu{
+            margin: 20px ;
+            text-align: center;
+            
+        }
+        
+
+        .menu a {
+            color: white;
+            font-size: 15px;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .opacity{
+            opacity: 0.5;
+            
+        }
+
+        .parent{
+            display: flex;
+        }
+
+        .content{
+            position: absolute;
+            left: 24%;
+            width: 76%;
+            height: 100%;
+            border: 2px solid darkred;
+            overflow-y: auto;
+            padding-left: 3%;
+            
+        }
+
+        .description{
+            margin-top: 20%;
+           
+        }
+
+        section.description h1{
+            font-size: 40px;
+        }
+
+        section.description h1 > span{
+            color: darkred;
+            
+
+        }
+
+        section p{
+            margin-top: 3%;
+        }
+
+
+       .perfil{
+           margin-top: 50%;
+        position: absolute;
+            left: 20%;
+            width: 80%;
+            height: 100%;
+            
+            overflow-y: auto;
+            padding-left: 3%;
+       }
+
+       .cursor{
+           cursor: context-menu ;
+       }
+
+       .opacity:hover{
+           transition: all 300ms; opacity: 1;
+           text-decoration: underline goldenrod;
+           border-left: 2px solid goldenrod;
+           border-right: 2px solid goldenrod;
+           border-radius: 5px;
+       }
+
+       img:hover{
+           border: 4px solid goldenrod;
+           transition: all 300ms;
+       }
+
+       section.description h1 > span:hover{
+           color:  goldenrod;
+        }
+        section.description h1:hover{
+            cursor: context-menu;
+        }
+
+        .nology{
+            color: darkred;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .nology:hover{
+            color: goldenrod;
+            transition: all 300ms;
+            cursor: context-menu;
+        }
+           .description p{
+               margin-top: 15px;
+           }
+       .description h3{
+           font-size: 15px;
+       }
+
+    </style>
+</head>
+<body>
+
+<div class="parent">
+
+    <div class="sidebar">
+        <div class="sidebar-pos">
+           <div class="img-sidebar">
+               <img src="assets/css/img/9b4ce04d-46a8-44c1-9874-fc15767afd67.jpg" alt="uma foto de perfil">
+           </div>
+          <div class="menu">
+            <a  href="#" class="cursor">Sobre</a>
+            <a class="opacity"  href="https://www.linkedin.com/in/andr%C3%A9-sardelli-70ab43220/">Linkedin</a>
+            <a class="opacity" href="https://github.com/AndreSardelli">Github</a>
+            <a class="opacity" href="https://www.instagram.com/_sardelli/">Instagram</a>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="content" >
+
+        <section class="description" id="sobre">
+
+        <h1>André <span>Sardelli</span> Guarezemini</h1>
+        <h3>23 Anos, Osasco - SP  Contato:(11) 9-9680-7400</h3>
+        <h4 class="nology">-- JavaScript | Node | SQL | HTML | CSS --</h4>
+        <p>Em busca de conhecimento na área de desenvolvimento, e do meu primeiro emprego na mesma.<br> A partir do meu trabalho, ter uma boa produtividade, contribuindo com os resultados da empresa.</p>
+        </section>
+    </div>
+
+
+
+
+</div>     
+</body>
+</html>
